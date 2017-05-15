@@ -1,0 +1,39 @@
+{
+  "name": "bb-bulk-importer",
+  "version": "1.0.0",
+  "description": "uses blackboard api to do bulks imports from oracle db to blackboard",
+  "main": "server.js",
+  "author": "Robert Bond",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.5",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.16.1",
+    "btoa": "^1.1.2",
+    "couchbase": "^2.3.3",
+    "csvtojson": "^1.1.4",
+    "express": "^4.14.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "mongoose": "^4.8.4",
+    "mongoose-unique-validator": "^1.0.3",
+    "morgan": "^1.8.1",
+    "node-json-transform": "^1.0.13",
+    "oauth": "^0.9.15",
+    "querystring": "^0.2.0",
+    "queue": "^4.2.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0",
+    "url": "^0.11.0",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "start": "SET NODE_ENV=development && node server.js --trace-sync-io",
+    "test": "mocha --timeout 10000"
+  }
+}
